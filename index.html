@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    <nav id="menu"> 
+        <a href="">Moedas</a>
+        <a href="">Calculadora</a>
+        <a href="">Temperatura</a>
+    </nav>
+
+        <button id="botao_menu">
+            <img src="./Imagens/6499731.png" width="44">
+        </button>
+
+        <div id="menu_mobile"> 
+            <nav id="menu"> 
+                <a href="">Moedas</a>
+                <a href="">Calculadora</a>
+                <a href="">Temperatura</a>
+            </nav>
+        </div>
+
+</header> 
+    <section class="Calculadora">
+        <div>
+            <p>Calculadora</p>
+            <input id="valor1" name="numero1" type="text">
+            <input id="valor2" name="numero2" type="text">
+        
+        <div class="botaoCalculadora">
+            <button onclick="contaAdicao()">+</button>
+            <button onclick="contaMultiplicacao()">X</button>
+            <button onclick="contaDivisao()">/</button>
+            <button onclick="contaSubtracao()">-</button>
+            <button onclick="apagarConteudo()">Apagar</button>
+        </div>
+            <input id="resultado" name="resultado" type="text">
+        </div>
+    </section>
+
+    <section class="conversor">
+        <div>
+            <p>Conversor Moedas</p>
+            <input id="valorMoeda" name="valorMoeda" type="text">
+                <div class="botaoConversor">
+                    <button onclick="conversaoDolar()">U$</button>
+                    <button onclick="conversaoReal()">R$</button>
+                    <button onclick="apagarConteudo()">Apagar</button>
+                </div>
+                <input id="resultadoDolar" name="resultado" type="text">
+        </div>
+    </section>
+
+    <section class="Temperatura">
+        <div>
+            <p>Converter temperatura</p>
+            <input id="temperatura" name="temperatura" type="text">
+            <div class="botaoTemperatura">
+            <button onclick="conversorCelsius()">°C</button>
+            <button onclick="conversorFahrenheit()">°F</button>
+            <button onclick="apagarConteudo()">Apagar</button>
+            </div>
+        </div>
+        <input id="resultadoTemperatura" name="resultado" type="text">
+
+
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
